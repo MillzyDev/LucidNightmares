@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://ipwplaltw4sg"]
+
+[node name="Bed" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="Matress" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0224313, 0.295199, -0.00196636)
+size = Vector3(1.85, 0.25, 0.9)
+
+[node name="Base" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019811, 0, -0.00400317)
+size = Vector3(1.87297, 0.35, 0.916455)
+
+[node name="Backboard" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.963345, 0.74819, 0)
+size = Vector3(0.05, 0.7, 0.95)
+
+[node name="BackboardSupport1" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.323, -0.25)
+size = Vector3(0.05, 1, 0.06)
+
+[node name="BackboardSupport2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.323, 0.25)
+size = Vector3(0.05, 1, 0.06)

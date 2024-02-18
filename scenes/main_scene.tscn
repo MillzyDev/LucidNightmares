@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://pxohxvb4bstm"]
+
+[node name="MainScene" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.80835, -0.378301, 0.451065, 0, 0.766201, 0.6426, -0.588703, -0.519446, 0.619359, 0, 10.7151, 0)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
+size = Vector3(11, 0.1, 14)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+size = Vector3(1, 1.3, 1)
